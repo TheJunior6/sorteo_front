@@ -1,7 +1,7 @@
 body {
-    background-color: rgb(199, 145, 250);
+    background-color: rgb(199, 145, 250); /* Fondo lavanda suave */
     font-family: 'Poppins', sans-serif;
-    color: #333; /* Texto oscuro para mejor contraste */
+    color: #2c3e50; /* Texto oscuro (casi negro) para buen contraste */
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,9 +12,16 @@ body {
 }
 
 h1, h2, h3, h4 {
-    color: #333; /* Asegura que los encabezados tengan un buen contraste */
+    color: #2c3e50; /* Encabezados con un color más oscuro para claridad */
+    font-weight: 600;
 }
 
 p, span {
-    color: #444; /* Un gris oscuro para el texto común */
+    color: #34495e; /* Gris más suave para los textos comunes */
+}
+
+/* Agregar transiciones suaves a los encabezados */
+h1:hover, h2:hover, h3:hover, h4:hover {
+    color: #8e44ad; /* Color púrpura en hover para los encabezados */
+    transition: color 0.3s ease;
 }
