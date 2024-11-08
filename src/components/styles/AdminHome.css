@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f9;
+    background-color: #f0f4f8; /* Fondo suave de color claro */
+    margin: 0;
 }
 
 #editSignos {
@@ -11,56 +12,70 @@
     margin: 50px auto;
     width: 80%;
     max-width: 450px;
-    padding: 20px;
+    padding: 25px;
     border-radius: 15px;
-    background-color: #2f3640;
-    color: #ecf0f1;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #34495e; /* Fondo oscuro con matices grises */
+    color: #ecf0f1; /* Texto blanco suave */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     font-family: 'Arial', sans-serif;
+    text-align: center;
 }
 
 #btnEditar {
     margin-top: 20px;
-    padding: 12px 30px;
+    padding: 14px 30px;
     border-radius: 12px;
-    background-color: #e67e22;
+    background-color: #e74c3c; /* Rojo vibrante */
     color: white;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s ease;
+    cursor: pointer;
 }
 
 #btnEditar:hover {
-    background-color: #d35400;
+    background-color: #c0392b; /* Rojo más oscuro en hover */
+    transform: translateY(-3px);
+}
+
+#btnEditar:active {
+    transform: translateY(1px);
 }
 
 #textoAdmin {
     font-style: italic;
     font-size: 1.1rem;
-    color: #ecf0f1;
+    color: #ecf0f1; /* Texto blanco suave */
     text-align: center;
+    margin-top: 15px;
 }
 
 #textoEditar {
     display: flex;
     align-items: center;
-    background-color: #7f8c8d;
+    background-color: #1abc9c; /* Verde agua */
     color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 12px;
     font-size: 1rem;
     margin-top: 10px;
 }
 
 #btnHomeAdmin {
-    margin-top: 20px;
-    padding: 10px 20px;
+    margin-top: 25px;
+    padding: 12px 25px;
     border-radius: 12px;
-    background-color: #3498db;
+    background-color: #2980b9; /* Azul claro */
     color: white;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s ease;
+    cursor: pointer;
 }
 
 #btnHomeAdmin:hover {
-    background-color: #2980b9;
+    background-color: #21618c; /* Azul más oscuro en hover */
+    transform: translateY(-3px);
+}
+
+#btnHomeAdmin:active {
+    transform: translateY(1px);
 }

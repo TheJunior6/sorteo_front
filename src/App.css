@@ -1,3 +1,20 @@
-body{
+body {
     background-color: rgb(199, 145, 250);
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Texto oscuro para mejor contraste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    color: #333; /* Asegura que los encabezados tengan un buen contraste */
+}
+
+p, span {
+    color: #444; /* Un gris oscuro para el texto común */
 }
