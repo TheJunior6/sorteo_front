@@ -12,10 +12,16 @@ body {
 form {
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 40px;
-    width: 300px;
+    width: 320px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 h1#txtBienvenida {
@@ -23,6 +29,7 @@ h1#txtBienvenida {
     color: #ff6f61;
     margin-bottom: 20px;
     animation: bounce 1s ease infinite alternate;
+    font-weight: 600;
 }
 
 h4.txt {
@@ -34,22 +41,23 @@ h4.txt {
 
 input.entry {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 12px;
+    margin-bottom: 20px;
     border: 2px solid #ff6f61;
     border-radius: 8px;
     outline: none;
     font-size: 14px;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 input.entry:focus {
     border-color: #f44336;
+    box-shadow: 0 0 5px rgba(244, 67, 54, 0.7);
 }
 
 input#btnEnviar {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #ff6f61;
     color: white;
     border: none;
@@ -57,6 +65,7 @@ input#btnEnviar {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    font-weight: 600;
 }
 
 input#btnEnviar:hover {
@@ -72,6 +81,7 @@ button#forgotPasswordLink {
     cursor: pointer;
     text-decoration: underline;
     font-size: 14px;
+    transition: color 0.3s ease;
 }
 
 button#forgotPasswordLink:hover {
