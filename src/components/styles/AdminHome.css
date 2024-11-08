@@ -1,48 +1,66 @@
-.container{
-    height: 300px;
-    display: grid;
-    place-items: center;
-}
-
-#editSignos{
-    display: block;  
-    margin-bottom: 10px;
-    margin-top: 0px;
-    margin: 100px;
-    width: 400px;
-    padding: 5px 50px 5px 10px;
-    border-radius: 10px;
-    background-color: rgb(71, 63, 63);
-    color: white;
-}
-
-#btnEditar{
-    margin-top: 10%;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 10px;
-    background-color: brown;
-    color: white;
-}
-
-#textoAdmin{
-    font-style: italic;
-}
-
-#textoEditar{
-    border-radius: 10px;
+.container {
+    height: 100vh;
     display: flex;
-    background-color: rgb(95, 82, 82);
-    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f9;
 }
 
-#btnHomeAdmin{
-    margin-top: 15px;
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+#editSignos {
+    display: block;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #2f3640;
+    color: #ecf0f1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+#btnEditar {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 12px;
+    background-color: #e67e22;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#btnEditar:hover {
+    background-color: #d35400;
+}
+
+#textoAdmin {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+#textoEditar {
+    display: flex;
+    align-items: center;
+    background-color: #7f8c8d;
+    color: white;
     border-radius: 10px;
-    background-color: blue;
-    color: white
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+#btnHomeAdmin {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#btnHomeAdmin:hover {
+    background-color: #2980b9;
 }
