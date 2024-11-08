@@ -1,11 +1,17 @@
 .admin-home {
-    padding: 20px;
-    max-width: 800px;
+    padding: 30px;
+    max-width: 900px;
     margin: auto;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
 }
 
 .tabla-ganadores {
@@ -16,18 +22,71 @@ h1 {
 
 .tabla-ganadores th, .tabla-ganadores td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px;
     text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.tabla-ganadores th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tabla-ganadores td {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.tabla-ganadores td:hover {
+    background-color: #f1f1f1;
 }
 
 .admin-actions {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 button {
-    padding: 10px 15px;
+    padding: 12px 20px;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .admin-home {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .tabla-ganadores th, .tabla-ganadores td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+    
