@@ -9,7 +9,7 @@ function AdminHome() {
     // Función para obtener los datos de ganadores del backend
     const fetchGanadores = async () => {
         try {
-            const response = await fetch("https://backganacomoloco-b1gi.vercel.app/v1/signos/ganadores", {
+            const response = await fetch("https://back-sorteo.vercel.app", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
